@@ -24,7 +24,7 @@ REQUIRED_ENV_VARS.forEach(env => {
   }
 });
 
-const eventContent = fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8');
+const eventContent = "{}";
 
 _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 
